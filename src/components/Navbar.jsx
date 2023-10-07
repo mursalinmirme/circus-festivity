@@ -33,7 +33,8 @@ const Navbar = () => {
                      </li>
     </>
     return (
-        <div className="navbar w-11/12 mx-auto bg-base-100">
+        <div className="absolute z-50 w-full">
+          <div className="navbar text-white w-11/12 py-5 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -53,7 +54,8 @@ const Navbar = () => {
   <div className="navbar-end">
     <a className="btn">Logout</a>
   </div>
-</div>
+        </div>
+        </div>
     );
 };
 
