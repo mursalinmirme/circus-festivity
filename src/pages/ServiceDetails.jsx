@@ -13,8 +13,9 @@ const ServiceDetails = () => {
 //    console.log(currentService);
     return (
         <div className="pt-20 w-11/12 mx-auto">
-            <h2 className="text-3xl">{currentService.title}</h2>
-            <img src={currentService.image} alt="" />
+            <h2 className="text-3xl mt-14 text-center font-bold text-gray-700">{currentService.title}</h2>
+            <img className="w-full mt-8 h-[600px]" src={currentService.image} alt="" />
+            <p className="text-lg mt-5 font-medium text-gray-500">{currentService.description}</p>
         </div>
     );
 };

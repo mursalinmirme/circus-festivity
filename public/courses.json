@@ -1,62 +1,50 @@
 [
-    {
-      "id": 1,
-      "title": "Full-stack Development Masterclass",
-      "image": "https://i.ibb.co/94RdRBg/developement.jpg",
-      "price": 199,
-      "description": "Learn the art of building robust web applications from front-end to back-end. Dive into HTML, CSS, JavaScript, Node.js, and more. This comprehensive course equips you with the skills to create cutting-edge web solutions.",
-      "rating": 4.5,
-      "category": "Web Development",
-      "starting_times": "Flexible schedule"
-    },
-    {
-      "id": 2,
-      "title": "Business Analysis and Valuation",
-      "image": "https://i.ibb.co/qdYDCgW/businessanalitics.jpg",
-      "price": 149,
-      "description": "Unlock the secrets of financial analysis, valuation, and strategic decision-making. This course will teach you how to assess a company's financial health and make informed business recommendations.",
-      "rating": 4.2,
-      "category": "Business & Finance",
-      "starting_times": "Next session starts in January 2023"
-    },
-    {
-      "id": 3,
-      "title": "Advanced Marketing Strategies",
-      "image": "https://i.ibb.co/MfXMWfb/marketstrategy.jpg",
-      "price": 179,
-      "description": "Elevate your marketing game with proven strategies and tactics. Explore digital marketing, social media, SEO, and content marketing to drive growth for your business.",
-      "rating": 4.7,
-      "category": "Marketing",
-      "starting_times": "Enroll now and start anytime"
-    },
-    {
-      "id": 4,
-      "title": "Artificial Intelligence and Machine Learning",
-      "image": "https://i.ibb.co/KbPRm6H/ailearning.jpg",
-      "price": 249,
-      "description": "Dive into the fascinating world of Artificial Intelligence and Machine Learning. Gain hands-on experience in building intelligent systems and predictive models.",
-      "rating": 4.9,
-      "category": "Artificial Intelligence",
-      "starting_times": "Next session begins in March 2023"
-    },
-    {
-      "id": 5,
-      "title": "Software Engineering Bootcamp",
-      "image": "https://i.ibb.co/3k7cKnB/software-Engenier.jpg",
-      "price": 199,
-      "description": "Embark on a journey to become a software development expert. Master coding, algorithms, data structures, and best practices in this intensive bootcamp.",
-      "rating": 4.6,
-      "category": "Software Development",
-      "starting_times": "Join anytime, self-paced"
-    },
-    {
-      "id": 6,
-      "title": "Project Management Fundamentals",
-      "image": "https://i.ibb.co/c3D45HT/project-Management.jpg",
-      "price": 149,
-      "description": "Learn the art of efficient project planning, execution, and team management. Become a certified project manager and lead successful projects.",
-      "rating": 4.4,
-      "category": "Project Management",
-      "starting_times": "Next cohort starts in February 2023"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Grand Circus Spectacle",
+    "image": "https://i.ibb.co/wpQJfWG/grand-circus.jpg",
+    "description": "Experience the awe-inspiring grand circus spectacle, featuring breathtaking acts, mesmerizing performances, and unforgettable moments under the big top.",
+    "price": "59.99",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "title": "VIP Circus Experience",
+    "image": "https://i.ibb.co/nzy1894/vip-circuses.jpg",
+    "description": "Elevate your circus experience with our VIP package. Enjoy premium ringside seats, access to an exclusive lounge, and a chance to meet the circus stars up close.",
+    "price": "119.99",
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "title": "Family Circus Day Pass",
+    "image": "https://i.ibb.co/kQXBX6q/family-circus.jpg",
+    "description": "Make it a family affair! Our Circus Day Pass includes tickets for 2 adults and 2 children, ensuring a day filled with laughter and wonder.",
+    "price": "169.99",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "title": "Circus Workshops & Training",
+    "image": "https://i.ibb.co/WtqfnHW/Circus-Workshops.jpg",
+    "description": "Unleash your inner performer with our Circus Workshops. Learn the art of juggling, acrobatics, and more from skilled instructors. No experience required!",
+    "price": "34.99",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "title": "Group Circus Discounts",
+    "image": "https://i.ibb.co/tPDtdmC/group-circus.png",
+    "description": "Gather your friends or colleagues for a circus adventure! Enjoy fantastic group discounts when you purchase 10 or more tickets together.",
+    "price": "223.46",
+    "rating": 4.5
+  },
+  {
+    "id": 6,
+    "title": "Circus Party Packages",
+    "image": "https://i.ibb.co/9bvWmBh/circus-party.png",
+    "description": "Celebrate your special occasion with a circus-themed party! Our packages include reserved seating, party favors, and circus-themed treats.",
+    "price": "249.99",
+    "rating": 4.7
+  }
+]

@@ -34,17 +34,20 @@ const Navbar = () => {
     </>
     const {pathname} = useLocation();
     let headerColor = null;
+    let navbarBorder = null;
     if(pathname != "/"){
       headerColor = "#000000";
+      navbarBorder = "1px solid #80808096";
     }else{
       headerColor = "#FFFFFF";
+      navbarBorder = "0px solid #80808096";
     }
     // const 
     console.log(pathname);
     return (
         <div className="absolute z-50 w-full">
           <div className="max-w-screen-2xl">
-          <div style={{color: `${headerColor}`}} className="navbar w-11/12 px-0 py-5 mx-auto">
+          <div style={{color: `${headerColor}`, borderBottom: `${navbarBorder}`}} className="navbar w-11/12 px-0 py-5 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,7 +57,7 @@ const Navbar = () => {
         {navItem}
       </ul>
     </div>
-    <a className="normal-case font-bold font-L text-2xl">innoLearn Hub</a>
+    <a className="normal-case font-bold font-L text-2xl">CircusFestivity</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal space-x-2 px-1 text-lg font-medium">

@@ -5,13 +5,11 @@ import Services from "../components/Services";
 import { useLoaderData } from "react-router-dom";
 const Home = () => {
     const services = useLoaderData();
+    console.log(services);
     return (
        <div className="max-w-screen-2xl">
           {/* banner */}
           <Banner></Banner>
-          <div className="bg-white w-full h-20">
-            
-          </div>
           {/* services courses */}
           <Services services={services}></Services>
          

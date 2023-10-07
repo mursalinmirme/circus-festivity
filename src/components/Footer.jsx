@@ -1,16 +1,16 @@
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs"
 const Footer = () => {
     return (
-        <div className="max-w-screen-2xl bg-base-200">
+        <div className="max-w-screen-2xl bg-base-200 mt-16">
           <div className="w-11/12 mx-auto">
           <footer className="footer flex justify-between pt-20 pb-10 bg-base-200 text-base-content">
   <aside>
-    <p className="text-3xl font-bold"><span className="text-orange-500">inn</span>oLearn Hub</p>
-    <p>A online course provider <br></br> for advance skill development</p>
+    <p className="text-3xl font-bold"><span className="text-[#ffa51d]">Circus</span>Festivity</p>
+    <p className="mt-3 leading-8"> Dedicated to Elevating the Circus <br /> Arts and Inspiring Excellence.</p>
   </aside> 
   <nav>
     <header className="footer-title text-gray-900">Useful Links</header> 
-    <a className="link link-hover text-base font-medium text-gray-600 mt-1">Courses</a> 
+    <a className="link link-hover text-base font-medium text-gray-600 mt-1">Our Service</a> 
     <a className="link link-hover text-base font-medium text-gray-600 mt-1">Terms and conditions</a> 
     <a className="link link-hover text-base font-medium text-gray-600 mt-1">Contact Us</a>
     <a className="link link-hover text-base font-medium text-gray-600 mt-1">Privacy Policy</a>
