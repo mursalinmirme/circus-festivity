@@ -1,7 +1,6 @@
 import developer from "../assets/developer.jpg";
 import Service from "./Service";
 const Services = ({services}) => {
-    console.log(services);
     return (
         <div className='mb-32 w-11/12 mx-auto'>
             <h3 className='text-center font-bold font-lora text-xl'>Featured Courses</h3>

@@ -15,11 +15,11 @@ const Banner = () => {
             <div className="center overflow-hidden border-none">
         <Slider {...settings}>
           {/* slider 1 */}
-          <div className="w-full border-none h-[100vh]">
+          <div className="w-full border-none h-[800px]">
                 <div className='relative'>
                   <img className="w-full" src={bannerOne} alt="" />
                   <div className="absolute text-white top-0 bg-[#000000c6] w-full h-full">
-                    <div className='flex justify-center flex-col items-center h-[99vh]'>
+                    <div className='flex justify-center flex-col items-center h-[800px]'>
                     <h3 className="text-xl text-white">InnoLearn Innovative & Successfull</h3>
                     <h2 className='text-7xl font-bold mt-10'>Online Courses</h2>
                     <button className='btn bg-green-600 border-none outline-none text-base font-semibold mt-12 rounded-none px-7 text-white'>Join Now</button>
@@ -28,11 +28,11 @@ const Banner = () => {
                 </div>
           </div>
           {/* slider 2 */}
-          <div className="w-full border-none h-[100vh]">
+          <div className="w-full border-none h-[800px]">
                 <div className='relative'>
                   <img className="w-full" src={bannerTwo} alt="" />
                   <div className="absolute text-white top-0 bg-[#000000c6] w-full h-full">
-                    <div className='flex justify-center flex-col items-center h-[99vh]'>
+                    <div className='flex justify-center flex-col items-center h-[800px]'>
                     <h3 className="text-xl text-white">InnoLearn Innovative & Successfull</h3>
                     <h2 className='text-7xl font-bold mt-10'>Online Courses</h2>
                     <button className='btn bg-green-600 border-none outline-none text-base font-semibold mt-12 rounded-none px-7 text-white'>Join Now</button>
@@ -41,11 +41,11 @@ const Banner = () => {
                 </div>
           </div>
           {/* slider 3 */}
-          <div className="w-full border-none h-[100vh]">
+          <div className="w-full border-none h-[800px]">
                 <div className='relative'>
                   <img className="w-full" src={bannerThree} alt="" />
                   <div className="absolute text-white top-0 bg-[#000000c6] w-full h-full">
-                    <div className='flex justify-center flex-col items-center h-[99vh]'>
+                    <div className='flex justify-center flex-col items-center h-[800px]'>
                     <h3 className="text-xl text-white">InnoLearn Innovative & Successfull</h3>
                     <h2 className='text-7xl font-bold mt-10'>Online Courses</h2>
                     <button className='btn bg-green-600 border-none outline-none text-base font-semibold mt-12 rounded-none px-7 text-white'>Join Now</button>

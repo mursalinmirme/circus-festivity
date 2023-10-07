@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Service = ({service}) => {
     const {id, title, image, price, description , category} = service;
     return (
@@ -11,9 +12,8 @@ const Service = ({service}) => {
                             <p className="text-base mt-2">{description.slice(0,150)}...</p>
                             <div className="flex mt-5 items-center justify-between">
                             <p className="text-orange-600 font-bold">Price: {price}$</p>
-                            <button className="bg-[#00a556] px-3 font-medium text-white rounded-md py-2">View Details</button>
+                            <Link to={`/service-details/${id}`}><button className="bg-[#00a556] px-3 font-medium text-white rounded-md py-2">View Details</button></Link>
                             </div>
-
                         </div>
                     </div>
                 </div>

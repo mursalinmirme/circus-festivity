@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import NotFoundPage from './notfoundpage/NotFoundPage'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
+import ServiceDetails from './pages/ServiceDetails'
 const router = createBrowserRouter([
     {
       path: '/',
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         {
           path: '/signup',
           element: <Signup></Signup>,
+        },
+        {
+          path: '/service-details/:id',
+          loader: () => fetch('/courses.json'),
+          element: <ServiceDetails></ServiceDetails>,
         },
       ]
     }
