@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillGithub } from 'react-icons/ai';
 import { useContext } from 'react';
 import { authContext } from '../authProvider/AuthProvider';
 import toast from 'react-hot-toast';
 const Signup = () => {
+    const navigate = useNavigate();
     const { signUpWithEmail, updateProfileAndEmail, signUpWithGoogle, signUpWithGithub } = useContext(authContext);
     const handleSignupWithEmail = (e) => {
         e.preventDefault();
@@ -31,6 +32,7 @@ const Signup = () => {
             updateProfileAndEmail({displayName: name, photoURL: img})
             .then(() => {
                 toast.success('Registration Successfully');
+                navigate('/')
             })
             .catch(errUpdate => {
                 toast.error(errUpdate.message);
@@ -51,6 +53,7 @@ const Signup = () => {
         signUpWithGoogle()
         .then(() => {
             toast.success("Sign up successfully");
+            navigate('/')
         })
         .catch(errorGoogl => {
             toast.error(errorGoogl.message);
@@ -64,6 +67,7 @@ const Signup = () => {
         signUpWithGithub()
         .then(() => {
             toast.success("Sign up successfully");
+            navigate('/')
         })
         .catch(errorGoogl => {
             toast.error(errorGoogl.message);

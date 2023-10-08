@@ -29,21 +29,42 @@ const Navbar = () => {
                   )}
                    </NavLink>
                      </li>
-        <li>
-        <NavLink id="RouterNavLink" to="/tasks">
+        <li className={user ? 'visible' : 'hidden'}>
+        <NavLink id="RouterNavLink" to="/services">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Services</span>
                   )}
                    </NavLink>
                      </li>
+        <li className={user ? 'visible' : 'hidden'}>
+        <NavLink id="RouterNavLink" to="/testimonials">
+           {({ isActive }) => (
+              <span className={isActive ? "active" : ""}>Testimonials</span>
+                  )}
+                   </NavLink>
+                     </li>
         <li>
+        <NavLink id="RouterNavLink" to="/about-us">
+           {({ isActive }) => (
+              <span className={isActive ? "active" : ""}>About Us</span>
+                  )}
+                   </NavLink>
+                     </li>
+        <li>
+        <NavLink id="RouterNavLink" to="/blog">
+           {({ isActive }) => (
+              <span className={isActive ? "active" : ""}>Blog</span>
+                  )}
+                   </NavLink>
+                     </li>
+        <li className={user && 'hidden'}>
         <NavLink id="RouterNavLink" to="/signin">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Signin</span>
                   )}
                    </NavLink>
                      </li>
-        <li>
+        <li className={user && 'hidden'}>
         <NavLink id="RouterNavLink" to="/signup">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Signup</span>
@@ -74,7 +95,7 @@ const Navbar = () => {
         {navItem}
       </ul>
     </div>
-    <a className="normal-case font-bold font-L text-2xl">CircusFestivity</a>
+    <a className="normal-case font-bold font-L text-2xl hidden lg:visible">CircusFestivity</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal space-x-2 px-1 text-lg font-medium">

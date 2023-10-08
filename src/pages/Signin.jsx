@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillGithub } from 'react-icons/ai';
 import { useContext } from 'react';
 import { authContext } from '../authProvider/AuthProvider';
 import toast from 'react-hot-toast';
 const Signin = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location);
+    console.log("login location", location);
     const {userSingInWithEmail, signInWithGoogle, signInWithGithub} = useContext(authContext);
     const handleSignInWithEmail = (e) => {
         e.preventDefault();
@@ -13,7 +17,11 @@ const Signin = () => {
         const password = form.get('password')
         userSingInWithEmail(email, password)
         .then(() => {
-            toast.success("You are loged in")
+            toast.success("You are loged in");
+            if(location?.state){
+                return navigate(location?.state);
+            }
+            return navigate('/')
         })
         .catch(error => {
             if(error.message === "Firebase: Error (auth/invalid-login-credentials)."){
@@ -30,6 +38,10 @@ const Signin = () => {
         signInWithGoogle()
         .then(() => {
             toast.success("Login successfully");
+            if(location?.state){
+                return navigate(location?.state);
+            }
+            return navigate('/')
         })
         .catch(errorGoogl => {
             toast.error(errorGoogl.message);
@@ -42,6 +54,10 @@ const Signin = () => {
         signInWithGithub()
         .then(() => {
             toast.success("Login successfully");
+            if(location?.state){
+                return navigate(location?.state);
+            }
+            return navigate('/')
         })
         .catch(errorGoogl => {
             toast.error(errorGoogl.message);

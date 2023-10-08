@@ -11,6 +11,7 @@ import ServiceDetails from './pages/ServiceDetails'
 import MagicCardsDetails from './components/MagicCardsDetails'
 import PurcheseTicket from './pages/PurcheseTicket'
 import AuthProvider from './authProvider/AuthProvider'
+import PrivateRoutes from './privateRoutes.jsx/PrivateRoutes'
 const router = createBrowserRouter([
     {
       path: '/',
@@ -33,17 +34,17 @@ const router = createBrowserRouter([
         {
           path: '/service-details/:id',
           loader: () => fetch('/courses.json'),
-          element: <ServiceDetails></ServiceDetails>,
+          element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
         },
         {
           path: '/magic-card-details/:cardId',
           loader: () => fetch('/magics.json'),
-          element: <MagicCardsDetails></MagicCardsDetails>,
+          element: <PrivateRoutes><MagicCardsDetails></MagicCardsDetails></PrivateRoutes>,
         },
         {
           path: '/purchase-tickets/:ticketId',
           loader: () => fetch('/tickets.json'),
-          element: <PurcheseTicket></PurcheseTicket>,
+          element: <PrivateRoutes><PurcheseTicket></PurcheseTicket></PrivateRoutes>,
         },
       ]
     }

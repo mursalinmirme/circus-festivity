@@ -6,7 +6,6 @@ const MagicCardsDetails = () => {
     const {cardId} = useParams();
     useEffect(() => {
         const currentCard = allCards.find(card => card.id == cardId);
-        console.log(currentCard);
         setMagicCard(currentCard);
     }, [])
 
