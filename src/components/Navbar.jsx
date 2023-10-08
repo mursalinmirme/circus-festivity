@@ -1,31 +1,50 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import toast from "react-hot-toast";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { authContext } from "../authProvider/AuthProvider";
 
 const Navbar = () => {
+
+    const {user, signOutUser} = useContext(authContext);
+
+    // user sign out
+    const handleSignOut = () => {
+        signOutUser()
+        .then(() => {
+          toast.success('Your are Loged out');
+        })
+        .catch(err => {
+          toast.error(err.message);
+        })
+    }
+
+
+
     const navItem = <>
 
         <li>
-        <NavLink to="/">
+        <NavLink id="RouterNavLink" to="/">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Home</span>
                   )}
                    </NavLink>
                      </li>
         <li>
-        <NavLink to="/tasks">
+        <NavLink id="RouterNavLink" to="/tasks">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Services</span>
                   )}
                    </NavLink>
                      </li>
         <li>
-        <NavLink to="/signin">
+        <NavLink id="RouterNavLink" to="/signin">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Signin</span>
                   )}
                    </NavLink>
                      </li>
         <li>
-        <NavLink to="/signup">
+        <NavLink id="RouterNavLink" to="/signup">
            {({ isActive }) => (
               <span className={isActive ? "active" : ""}>Signup</span>
                   )}
@@ -63,7 +82,17 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Logout</a>
+    {
+      user ? <div className="flex items-center gap-3">
+             <p className="font-medium">{user?.displayName}</p>
+             <img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
+             <a onClick={handleSignOut} className="btn font-semibold">Logout</a>
+             </div> :
+             <div>
+               <Link to={'/signin'}><a className="btn font-semibold">Sign in</a></Link>
+             </div>
+    }
+    
   </div>
           </div>
           </div>
