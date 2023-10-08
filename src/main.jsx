@@ -8,6 +8,7 @@ import NotFoundPage from './notfoundpage/NotFoundPage'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import ServiceDetails from './pages/ServiceDetails'
+import MagicCardsDetails from './components/MagicCardsDetails'
 const router = createBrowserRouter([
     {
       path: '/',
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
           path: '/service-details/:id',
           loader: () => fetch('/courses.json'),
           element: <ServiceDetails></ServiceDetails>,
+        },
+        {
+          path: '/magic-card-details/:cardId',
+          loader: () => fetch('/magics.json'),
+          element: <MagicCardsDetails></MagicCardsDetails>,
         },
       ]
     }

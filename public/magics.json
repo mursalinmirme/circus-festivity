@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Magic Tricks",
+    "description": "Prepare to be mystified by our dazzling magic tricks, where the impossible becomes reality. Our talented magicians will leave you in awe.",
+    "image": "https://i.ibb.co/HtdnrJ5/magic-tricks.jpg",
+    "startinMagic": "Starting Apr 23, 2024 to May 26, 2024"
+  },
+  {
+    "id": 2,
+    "title": "Igneous Show",
+    "description": "Experience the heat and intensity of our Igneous Show, featuring breathtaking fire performances that will ignite your sense of wonder.",
+    "image": "https://i.ibb.co/q0FQPZr/igneousshow.jpg",
+    "startinMagic": "Starting Apr 28, 2024 to May 29, 2024"
+  },
+  {
+    "id": 3,
+    "title": "Fun Performance",
+    "description": "Get ready for a fun-filled circus performance that will have you laughing, clapping, and cheering from start to finish. Fun for all ages!",
+    "image": "https://i.ibb.co/HKd7wvP/fun-perfornamce.webp",
+    "startinMagic": "Starting Jun 2, 2024 to Jul 4, 2024"
+  },
+  {
+    "id": 4,
+    "title": "Aerialists Show",
+    "description": "Marvel at the grace and skill of our incredible aerialists as they soar through the air, defying gravity and creating a mesmerizing spectacle.",
+    "image": "https://i.ibb.co/8sXncJk/aerilistic.jpg",
+    "startinMagic": "Starting Jun 12, 2024 to Jul 14, 2024"
+  },
+  {
+    "id": 5,
+    "title": "Fire Magic",
+    "description": "Prepare to be enchanted by the mesmerizing world of Fire Magic, where flames dance and illusions come to life. An extraordinary display awaits.",
+    "image": "https://i.ibb.co/BGdkw1H/firemagic.jpg",
+    "startinMagic": "Starting Jun 17, 2024 to Jul 23, 2024"
+  }
+]

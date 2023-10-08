@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import { useLoaderData } from "react-router-dom";
+import Ourshows from "../components/Ourshows";
 const Home = () => {
     const services = useLoaderData();
     console.log(services);
@@ -12,7 +13,8 @@ const Home = () => {
           <Banner></Banner>
           {/* services courses */}
           <Services services={services}></Services>
-         
+          {/* our show section */}
+          <Ourshows></Ourshows>
        </div>
 
     );

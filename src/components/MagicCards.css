@@ -1,0 +1,14 @@
+/* .fullMagicCards:hover{
+    border: 3px solid red;
+}
+.magicCardDetailsBtn{
+    color: red;
+
+} */
+.magicCardDetailsBtn{
+    display: none;
+}
+.fullMagicCards:hover .magicCardDetailsBtn{
+    display: block;
+}
+
