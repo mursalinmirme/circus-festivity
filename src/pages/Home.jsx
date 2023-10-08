@@ -4,9 +4,9 @@ import Banner from "../components/Banner";
 import Services from "../components/Services";
 import { useLoaderData } from "react-router-dom";
 import Ourshows from "../components/Ourshows";
+import Tickets from "../components/Tickets";
 const Home = () => {
     const services = useLoaderData();
-    console.log(services);
     return (
        <div className="max-w-screen-2xl">
           {/* banner */}
@@ -15,6 +15,8 @@ const Home = () => {
           <Services services={services}></Services>
           {/* our show section */}
           <Ourshows></Ourshows>
+          {/* buy Ticket Section */}
+          <Tickets></Tickets>
        </div>
 
     );

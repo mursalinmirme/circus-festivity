@@ -11,14 +11,14 @@ const Ourshows = () => {
         .then(data => setMagics(data))
     }, [])
 
-
-
     const settings = {
-        dots: true,
+      dots: false,
+      autoplay: true,
       infinite: true,
-      speed: 500,
+      autoplaySpeed: 2000,
+      speed: 1000,
       slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToScroll: 1
       };
     return (
         <div className='w-11/12 mx-auto mt-20'>

@@ -9,6 +9,7 @@ import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import ServiceDetails from './pages/ServiceDetails'
 import MagicCardsDetails from './components/MagicCardsDetails'
+import PurcheseTicket from './pages/PurcheseTicket'
 const router = createBrowserRouter([
     {
       path: '/',
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
           path: '/magic-card-details/:cardId',
           loader: () => fetch('/magics.json'),
           element: <MagicCardsDetails></MagicCardsDetails>,
+        },
+        {
+          path: '/purchase-tickets/:ticketId',
+          loader: () => fetch('/tickets.json'),
+          element: <PurcheseTicket></PurcheseTicket>,
         },
       ]
     }

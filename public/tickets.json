@@ -1,0 +1,32 @@
+[
+    {
+      "id": "adult_ticket_1",
+      "type": "Adults(13 to Older)",
+      "price": 80,
+      "facilities": [
+        "VIP experience priority seating",
+        "Savor complimentary refreshments",
+        "learn circus skills like juggling"
+      ]
+    },
+    {
+      "id": "children_ticket_1",
+      "type": "Children(Ages 3-12)",
+      "price": 60,
+      "facilities": [
+        "Children can meet with the circus clowns",
+        "Provide complimentary treat bag",
+        "Offer a balloon animal station"
+      ]
+    },
+    {
+      "id": "infant_ticket_1",
+      "type": "Infant (Up to 2 Years)",
+      "price": 40,
+      "facilities": [
+        "Discounted Merchandise",
+        "Reserved Parking",
+        "Early Access"
+      ]
+    }
+  ]

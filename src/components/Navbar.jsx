@@ -42,8 +42,6 @@ const Navbar = () => {
       headerColor = "#FFFFFF";
       navbarBorder = "0px solid #80808096";
     }
-    // const 
-    console.log(pathname);
     return (
         <div className="absolute z-50 w-full">
           <div className="max-w-screen-2xl">
