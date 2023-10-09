@@ -6,7 +6,7 @@ const Ourshows = () => {
     const [magics, setMagics] = useState([])
 
     useEffect(() => {
-        fetch('/public/magics.json')
+        fetch('/magics.json')
         .then(res => res.json())
         .then(data => setMagics(data))
     }, [])

@@ -67,7 +67,7 @@ const Signin = () => {
 
 
     return (
-        <div className='pt-28 w-11/12 mx-auto'>
+        <div data-aos="zoom-in" className='pt-28 w-11/12 mx-auto'>
             <div className='flex justify-center'>
                 <div>
                 <div className='border rounded-lg px-8 py-8 lg:w-[550px] mt-5'>

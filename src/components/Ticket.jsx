@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './Tickets.css';
 const Ticket = ({ticket}) => {
     return (
-        <div className="border p-7 ticketsBody">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" className="border p-7 ticketsBody">
                     <div className='mt-4 flex justify-center gap-1 items-end'>
                         <h4 className='text-6xl font-bold text-gray-700 ticketPrice'>{ticket?.price}$</h4>
                         </div>
@@ -14,13 +14,12 @@ const Ticket = ({ticket}) => {
                         <h3 className='text-center text-2xl font-bold text-gray-700 mt-5'>{ticket?.type}</h3>
                     <ul className='mt-9 space-y-4'>
                         {
-                            ticket?.facilities.map(facility => {
-                                return <>
-                                <li className='flex items-center gap-2 justify-center'>
+                            ticket?.facilities.map((facility, indx) => {
+                                return <li key={indx} className='flex items-center gap-2 justify-center'>
                                 <BsCheckCircleFill className='text-orange-500'></BsCheckCircleFill>
                                     <span>{facility}</span>
                                 </li>
-                                </>
+
                             })
                         }
                     </ul>

@@ -1,7 +1,7 @@
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs"
 const Footer = () => {
     return (
-        <div className="max-w-screen-2xl bg-base-200 mt-16">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" className="max-w-screen-2xl bg-base-200 mt-16">
           <div className="w-11/12 mx-auto">
           <footer className="footer flex flex-col lg:flex-row justify-between pt-20 pb-10 bg-base-200 text-base-content">
   <aside>

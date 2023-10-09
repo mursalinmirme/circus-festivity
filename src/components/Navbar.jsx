@@ -78,7 +78,7 @@ const Navbar = () => {
       navbarBorder = "0px solid #F1EFEF";
     }
     return (
-        <div className="absolute z-50 w-full">
+        <div data-aos="fade-down" className="absolute z-50 w-full">
           <div className="max-w-screen-2xl">
           <div style={{color: `${headerColor}`, borderBottom: `${navbarBorder}`}} className="navbar w-11/12 px-0 py-5 mx-auto">
   <div className="navbar-start">

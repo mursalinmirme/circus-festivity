@@ -11,7 +11,7 @@ const Events = () => {
     return (
         <div className='w-11/12 mx-auto pt-28'>
             <h3 className='text-center font-bold text-gray-800 text-3xl mt-7'>Our Exciting Next Events</h3>
-            <div className='grid grid-cols-3 gap-6 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10'>
                 <Event pic={event1} eventName="The Great Circus Parade" time="8pm - 11am" date="21 November 2023"></Event>
                 <Event pic={event2} eventName="The Flying Trapeze Showcase" time="11pm - 3am" date="23 November 2023"></Event>
                 <Event pic={event3} eventName="Clown Capers and Comedy" time="7pm - 10am" date="25 November 2023"></Event>
