@@ -84,7 +84,7 @@ const Signup = () => {
         <div className='pt-28 w-11/12 mx-auto'>
             <div className='flex justify-center'>
                 <div>
-                <div className='border rounded-lg px-8 py-8 w-[550px] mt-5'>
+                <div className='border rounded-lg px-8 py-8 md:w-[550px] mt-5'>
                 <p className='text-center text-gray-800'>Welcome</p>
                 <h3 className='text-2xl font-semibold text-slate-700 mt-3 text-center'>Join Us by Creating an Account</h3>
                 <form onSubmit={handleSignupWithEmail} className='mt-5'>

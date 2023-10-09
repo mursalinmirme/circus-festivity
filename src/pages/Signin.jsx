@@ -70,7 +70,7 @@ const Signin = () => {
         <div className='pt-28 w-11/12 mx-auto'>
             <div className='flex justify-center'>
                 <div>
-                <div className='border rounded-lg px-8 py-8 w-[550px] mt-5'>
+                <div className='border rounded-lg px-8 py-8 lg:w-[550px] mt-5'>
                 <h3 className='text-2xl font-semibold text-slate-700 mt-3 text-center'>Welcome Back</h3>
                 <form onSubmit={handleSignInWithEmail} className='mt-9'>
                     <div className='flex flex-col mb-5'>

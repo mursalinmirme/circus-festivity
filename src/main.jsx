@@ -12,6 +12,9 @@ import MagicCardsDetails from './components/MagicCardsDetails'
 import PurcheseTicket from './pages/PurcheseTicket'
 import AuthProvider from './authProvider/AuthProvider'
 import PrivateRoutes from './privateRoutes.jsx/PrivateRoutes'
+import VipMembership from './pages/VipMembership'
+import Events from './pages/Events'
+import AboutUs from './pages/AboutUs'
 const router = createBrowserRouter([
     {
       path: '/',
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
         {
           path: '/signup',
           element: <Signup></Signup>,
+        },
+        {
+          path: '/vip-membership',
+          element: <PrivateRoutes><VipMembership></VipMembership></PrivateRoutes>,
+        },
+        {
+          path: '/events',
+          element: <PrivateRoutes><Events></Events></PrivateRoutes>,
+        },
+        {
+          path: '/about-us',
+          element: <AboutUs></AboutUs>
         },
         {
           path: '/service-details/:id',

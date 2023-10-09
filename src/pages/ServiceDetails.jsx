@@ -16,7 +16,7 @@ const ServiceDetails = () => {
             <img className="w-full mt-8 h-[600px]" src={currentService.image} alt="" />
             <h2 className="text-3xl mt-5 font-bold text-gray-700">{currentService.title}</h2>
             <p className="text-lg mt-5 font-medium text-gray-500">{currentService.description}</p>
-            <button className="btn mt-5">Hire Now</button>
+
         </div>
     );
 };

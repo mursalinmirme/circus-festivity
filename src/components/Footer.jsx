@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <div className="max-w-screen-2xl bg-base-200 mt-16">
           <div className="w-11/12 mx-auto">
-          <footer className="footer flex justify-between pt-20 pb-10 bg-base-200 text-base-content">
+          <footer className="footer flex flex-col lg:flex-row justify-between pt-20 pb-10 bg-base-200 text-base-content">
   <aside>
     <p className="text-3xl font-bold"><span className="text-[#ffa51d]">Circus</span>Festivity</p>
     <p className="mt-3 leading-8"> Dedicated to Elevating the Circus <br /> Arts and Inspiring Excellence.</p>
