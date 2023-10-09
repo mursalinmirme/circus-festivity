@@ -12,8 +12,8 @@ const Event = ({pic, date, time, eventName}) => {
                         <h3 className='text-xl font-semibold text-yellow-400'>Date: {date}</h3>
                         <h2 className='text-2xl font-bold text-slate-100'>{eventName}</h2>
                         </div>
-                    </div>
-                </div>
+            </div>
+        </div>
     );
 };
 

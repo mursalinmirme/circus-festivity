@@ -6,9 +6,9 @@ const Banner = () => {
     const settings = {
         dots: false,
         infinite: true,
-        // speed: 800,
-        // autoplaySpeed: 4000,
-        // autoplay:true,
+        speed: 800,
+        autoplaySpeed: 4000,
+        autoplay:true,
         pauseOnHover: false,
         slidesToShow: 1,
         slidesToScroll: 1
