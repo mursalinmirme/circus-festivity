@@ -6,7 +6,7 @@ const Ourshows = () => {
     const [magics, setMagics] = useState([])
 
     useEffect(() => {
-        fetch('/magics.json')
+        fetch('http://localhost:4600/magics')
         .then(res => res.json())
         .then(data => setMagics(data))
     }, [])
@@ -56,7 +56,7 @@ const Ourshows = () => {
         <Slider {...settings}>
         {/* single slider 1 */}
         {
-            magics.map(magic => <MagicsCards key={magic.id} magic={magic}></MagicsCards>)
+            magics.map(magic => <MagicsCards key={magic._id} magic={magic}></MagicsCards>)
             
         }
           

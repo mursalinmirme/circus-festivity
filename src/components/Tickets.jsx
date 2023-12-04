@@ -5,7 +5,7 @@ const Tickets = () => {
 
     const [tickets, setTickets] = useState([]);
     useEffect(() => {
-        fetch('/tickets.json')
+        fetch('http://localhost:4600/tickets')
         .then(response => response.json())
         .then(data => setTickets(data))
     }, [])
@@ -17,7 +17,7 @@ const Tickets = () => {
             {/* tickets cards wrap */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                 {
-                    tickets.map(ticket => <Ticket key={ticket.id} ticket={ticket}></Ticket>)
+                    tickets.map(ticket => <Ticket key={ticket._id} ticket={ticket}></Ticket>)
                 }
             </div>
         </div>

@@ -24,7 +24,7 @@ const Ticket = ({ticket}) => {
                         }
                     </ul>
                     <div className='text-center mt-10 mb-6'>
-                       <Link to={`/purchase-tickets/${ticket.id}`}>
+                       <Link to={`/purchase-tickets/${ticket._id}`}>
                        <button className='btn text-base font-semibold bg-orange-500 text-white px-8 rounded-full hover:text-gray-600'>Buy Now</button></Link>
                     </div>
                 </div>

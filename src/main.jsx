@@ -23,7 +23,6 @@ const router = createBrowserRouter([
       children: [
         {
           path: '/',
-          loader: () => fetch('/courses.json'),
           element: <Home></Home>,
         },
         {
@@ -48,17 +47,17 @@ const router = createBrowserRouter([
         },
         {
           path: '/service-details/:id',
-          loader: () => fetch('/courses.json'),
+          loader: () => fetch('http://localhost:4600/courses'),
           element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
         },
         {
           path: '/magic-card-details/:cardId',
-          loader: () => fetch('/magics.json'),
+          loader: () => fetch('http:/localhost:4600/magics'),
           element: <PrivateRoutes><MagicCardsDetails></MagicCardsDetails></PrivateRoutes>,
         },
         {
           path: '/purchase-tickets/:ticketId',
-          loader: () => fetch('/tickets.json'),
+          loader: () => fetch('http://localhost:4600/tickets'),
           element: <PrivateRoutes><PurcheseTicket></PurcheseTicket></PrivateRoutes>,
         },
       ]

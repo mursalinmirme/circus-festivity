@@ -1,6 +1,5 @@
 [
     {
-      "id": "adult_ticket_1",
       "type": "Adults(13 to Older)",
       "price": 80,
       "facilities": [
@@ -10,7 +9,6 @@
       ]
     },
     {
-      "id": "children_ticket_1",
       "type": "Children(Ages 3-12)",
       "price": 60,
       "facilities": [
@@ -20,7 +18,6 @@
       ]
     },
     {
-      "id": "infant_ticket_1",
       "type": "Infant (Up to 2 Years)",
       "price": 40,
       "facilities": [

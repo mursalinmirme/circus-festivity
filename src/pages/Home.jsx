@@ -7,8 +7,16 @@ import Ourshows from "../components/Ourshows";
 import Tickets from "../components/Tickets";
 import Gallery from "../components/Gallery";
 import { Helmet } from "react-helmet";
+import { useEffect, useState } from "react";
 const Home = () => {
-    const services = useLoaderData();
+   const [services, setServices] = useState([]);
+    useEffect(()=> {
+      fetch('http://localhost:4600/circuses')
+      .then(res => res.json())
+      .then(data => {
+         setServices(data)
+      })
+    }, [])
     return (
        <div>
          <Helmet>
