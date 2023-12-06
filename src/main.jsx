@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/purchase-tickets/:ticketId',
-          loader: () => fetch('http://localhost:4600/tickets'),
+          loader: ({params}) => fetch(`http://localhost:4600/tickets/${params.ticketId}`),
           element: <PrivateRoutes><PurcheseTicket></PurcheseTicket></PrivateRoutes>,
         },
       ]

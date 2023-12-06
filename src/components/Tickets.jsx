@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import {BsCheckCircleFill, BsDot} from 'react-icons/bs'
 import Ticket from './Ticket';
 const Tickets = () => {
-
     const [tickets, setTickets] = useState([]);
     useEffect(() => {
         fetch('http://localhost:4600/tickets')

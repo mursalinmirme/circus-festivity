@@ -2,6 +2,7 @@ import { BsCheckCircleFill, BsDot } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import './Tickets.css';
 const Ticket = ({ticket}) => {
+    console.log('current ticket is', ticket);
     return (
         <div data-aos="zoom-in-up" data-aos-duration="1000" className="border p-7 ticketsBody">
                     <div className='mt-4 flex justify-center gap-1 items-end'>
