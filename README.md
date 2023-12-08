@@ -14,4 +14,4 @@ Features of the project:
 <br>
 ➎ Slider and scroll effect: I have used react slick slider in my project inside the banner and showing show cards. after every 3 seconds it will sliding continuesly. Also I have use AOS animation scroll packege in my priject. Which will give a user fantasy. When the user scrolling the AOS animation will work.
 <br>
-<b>Technologies:</b> React, Node.js, express.js, MongoDB, Firebase, Tailwind
+<b>Technologies:</b> React, Node.js, express.js, MongoDB, Firebase, Tailwind, AOS - animation
