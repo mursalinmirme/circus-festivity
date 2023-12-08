@@ -13,3 +13,5 @@ Features of the project:
 ➍ Event manegement: I have make make the purchase ticket system in my project. where people can see three types of tickets. one for adults, children and infant(up to 2 years). Also I have make a upcomming Event showing private route. Where a loged in user can enter the event route. I have make a Vip membership route for get a membership.
 <br>
 ➎ Slider and scroll effect: I have used react slick slider in my project inside the banner and showing show cards. after every 3 seconds it will sliding continuesly. Also I have use AOS animation scroll packege in my priject. Which will give a user fantasy. When the user scrolling the AOS animation will work.
+<br>
+<b>Technologies:</b> React, Node.js, express.js, MongoDB, Firebase, Tailwind, AOS - animation
